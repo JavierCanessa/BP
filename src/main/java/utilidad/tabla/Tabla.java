@@ -84,7 +84,7 @@ public class Tabla<E> {
         
         table+="<tr style='border:beige 1px solid;text-align:center'>";
         for(Field f:campos) table+="<th>"+f.getName()+"</th>";
-        table+="<th style='border:beige 1px solid;text-align:center'>Eliminar</th>";
+        table+="<th style='border:beige 1px solid;text-align:center'></th>";
         table+="</tr>\n";
         
         for(E r:list){
