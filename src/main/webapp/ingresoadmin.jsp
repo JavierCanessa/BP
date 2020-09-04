@@ -43,14 +43,15 @@
                                         <div class="inner">
                                                 <h1>Ingresaste como Administrador</h1>
                                                 <p>vas a poder ingresar nuevo registro, modificar o eliminarlo.</p><br>
-                                                <p><button onclick="location.href='ingresoNuevo.jsp'">Ingresar Nueva Empresa </button> O BUSCAR POR : </p>
+                                                <button onclick="location.href='ingresoNuevo.jsp'">Ingresar Nueva Empresa </button><br><br>
+                                                <p> O BUSCAR POR : </p>
                                         </div>
                                 </div>
                                 <nav>
                                         <ul>
                                             <li><a href="#CodEmpresa">Codigo empresa</a></li>
-                                            <li><a href="#DescEmpresa">Descripcion empresa</a></li>
-                                            <li><a href="tablacompleta.jsp">Ver Tabla Completa</a></li>
+                                            <li><a href="#DescEmpresa">Nombre empresa</a></li>
+                                            <li><a target="_blank" href="tablacompleta.jsp">Ver Tabla Completa</a></li>
                                         </ul>
                                 </nav>
                         </header>
@@ -61,11 +62,11 @@
                                 <!-- Busqueda Codigo de empresa -->
                                         <article id="CodEmpresa">
                                                 <h2 class="major">Buscar por Codigo</h2>
-                                                <p> <button class="botonesBusq" style='margin-left: 10px' onclick="location.href='#DescEmpresa'">Buscar por descripcion</button></p>
+                                                <!--<p> <button class="botonesBusq" style='margin-left: 10px' onclick="location.href='#DescEmpresa'">Buscar por descripcion</button></p>-->
                                                 <!--<p> <button class="botonesBusq" style='margin-left: 10px' onclick="location.href='index.jsp/#CodEmpresa'">Recargar</button></p>-->
                                                 <form method="POST">
                                                         <h3>ID de Empresa:</h3>   
-                                                        <input required="" type="text" autofocus name="buscarEmpresaid" placeholder="No se ha ingresado ningun Codigo de Empresa"/>
+                                                        <input required="" type="text" autofocus name="buscarEmpresaid" placeholder="Ingrese Codigo de Empresa"/>
                                                 </form>                                              
 
                                                 <p class="major">
@@ -84,11 +85,11 @@
 
                                 <!-- Busqueda Descripcion de emrpesa -->
                                         <article id="DescEmpresa">
-                                                <h2 class="major">Buscar Descripcion</h2>
-                                                <p> <button class="botonesBusq" style='margin-left: 10px' onclick="location.href='#CodEmpresa'">Buscar por Codigo</button></p>
+                                                <h2 class="major">Buscar Nombre</h2>
+                                                <!--<p> <button class="botonesBusq" style='margin-left: 10px' onclick="location.href='#CodEmpresa'">Buscar por Codigo</button></p>-->
                                                 <!--<p> <button class="botonesBusq" style='margin-left: 10px' onclick="location.href='index.jsp/#DescEmpresa'">Recargar</button></p>-->
                                                 <form method="POST">
-                                                        <h3>Descripcion de Empresa:</h3>   
+                                                        <h3>Nombre de Empresa:</h3>   
                                                         <input required="" type="text" autofocus name="buscarEmpresadesc" placeholder="No se ha ingresado ninguna Descripcion de empresa"/>
                                                 </form>
                                                 <p class="major">

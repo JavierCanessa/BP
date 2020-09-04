@@ -42,7 +42,7 @@
 						<nav>
 							<ul>
 								<li><a href="#CodEmpresa">Codigo de empresa</a></li>
-								<li><a href="#DescEmpresa">Descripcion de empresa</a></li>
+								<li><a href="#DescEmpresa">Nombre de empresa</a></li>
 								<li><a href="#modContrapartida">Modificar CONTRAPARTIDA</a></li>
 								<!--<li><a href="#contact">Contact</a></li>-->
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -55,12 +55,12 @@
 
 						<!-- Busqueda Codigo de empresa -->
 							<article id="CodEmpresa">
-								<h2 class="major">Buscar por Codigo</h2>
-                                                                <p> <button onclick="location.href='#DescEmpresa'">Buscar por descripcion</button></p>
+								<h2 class="major">Buscar Codigo:</h2>
+                                                                <!--<p> <button onclick="location.href='#DescEmpresa'">Buscar por descripcion</button></p>-->
                                                                 
                                                                 <form method="POST">
-                                                                        <h3>ID de Empresa:</h3>   
-                                                                        <input autofocus required="" type="text"  name="buscarEmpresaid" placeholder="No se ha ingresado ningun Codigo de Empresa"/>
+                                                                        <!--<h3>ID de Empresa:</h3>-->   
+                                                                        <input autofocus required="" type="text"  name="buscarEmpresaid" placeholder="Ingrese Codigo de Empresa"/>
                                                                 </form>                                              
                                                                     
                                                                 <p class="major">
@@ -80,11 +80,11 @@
 
 						<!-- Busqueda Descripcion de emrpesa -->
 							<article id="DescEmpresa">
-								<h2 class="major">Buscar Descripcion</h2>
-                                                                <p> <button onclick="location.href='#CodEmpresa'">Buscar por Codigo</button></p>
+								<h2 class="major">Buscar Nombre:</h2>
+                                                                <!--<p> <button onclick="location.href='#CodEmpresa'">Buscar por Codigo</button></p>-->
                                                                 
                                                                 <form method="POST">
-                                                                        <h3>Descripcion de Empresa:</h3>   
+                                                                        <!--<h3>Nombre de Empresa:</h3>-->
                                                                         <input autofocus required="" type="text" name="buscarEmpresadesc" placeholder="No se ha ingresado ninguna Descripcion de empresa"/>
                                                                 </form>
                                                                 <p class="major">
@@ -106,19 +106,19 @@
 						<!-- Modificar Contrapartida -->
 							<article id="modContrapartida">
 								<h2 class="major">Buscar :  </h2>
-                                                                <p> <button onclick="location.href='#ContraDescEmpresa'">Por Descripcion</button></p>
+                                                                <p> <button onclick="location.href='#ContraDescEmpresa'">Por Nombre</button></p>
                                                                 <p> <button onclick="location.href='#ContraCodEmpresa'">Por Codigo</button></p>
                                                         </article>
                                                             
                                                             <!-- Contraparitoda busqueda -->
                                                             
                                                             <article id="ContraDescEmpresa">
-                                                                <h2 class="major">Por Descripcion</h2>
-                                                                <p> <button style="border: 1px;border-color: #F51E59;border-style: solid" onclick="location.href='#ContraCodEmpresa'">Buscar por Codigo</button></p>
+                                                                <h2 class="major">Modificar<br>Contrapartida</h2>
+                                                                <!--<p> <button style="border: 1px;border-color: #F51E59;border-style: solid" onclick="location.href='#ContraCodEmpresa'">Buscar por Codigo</button></p>-->
 
                                                                 <form method="POST">
-                                                                        <h3>Descripcion de Empresa:</h3>   
-                                                                        <input required="" type="text" autofocus name="ContrabuscarEmpresadesc" placeholder="No se ha ingresado ninguna Descripcion de empresa"/>
+                                                                        <h3>Por Nombre de Empresa:</h3>
+                                                                        <input required="" type="text" autofocus name="ContrabuscarEmpresadesc" placeholder="Ingrese de empresa"/>
                                                                 </form>
                                                                 <p class="major">
                                                                     <%
@@ -135,12 +135,12 @@
                                                             
                                                             <!-- Contraparitoda busqueda -->
                                                         <article id="ContraCodEmpresa">
-                                                        <h2 class="major">Por Codigo</h2>
-                                                        <p> <button style="border: 1px;border-color: #F51E59;border-style: solid" onclick="location.href='#ContraDescEmpresa'">Buscar por Descripcion</button></p>
+                                                            <h2 class="major">Modificar<br>Contrapartida</h2>
+                                                        <!--<p> <button style="border: 1px;border-color: #F51E59;border-style: solid" onclick="location.href='#ContraDescEmpresa'">Buscar por Descripcion</button></p>-->
 
                                                         <form method="POST">
-                                                                <h3>Codigo de Empresa:</h3>   
-                                                                <input required="" type="text" autofocus name="ContrabuscarEmpresaCod" placeholder="No se ha ingresado ningun Codigo de empresa"/>
+                                                                <h3>Por Codigo de Empresa:</h3>   
+                                                                <input required="" type="text" autofocus name="ContrabuscarEmpresaCod" placeholder="Ingrese Codigo de empresa"/>
                                                         </form>
                                                         <p class="major">
                                                             <%
@@ -437,8 +437,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 			</div>
 
-		<!-- BG -->
-			<div id="bg"></div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
