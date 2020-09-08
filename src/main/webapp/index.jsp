@@ -15,7 +15,7 @@
 -->
 <html>
 	<head>
-		<title>BUSCADOR</title>
+		<title>Codigo Mi Vecino</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -33,7 +33,7 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Buscador de empresas</h1>
+								<h1>Codigo Mi Vecino</h1>
                                                                 <a href="ingresoadmin.jsp" style="border: 2px solid white; padding: 1.5%">INGRESAR COMO ADMINISTRADOR</a>
                                                                 <br><br>
 								<p>SELECCIONE CRITERIO DE BUSQUEDA : </p>
