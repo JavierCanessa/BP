@@ -7,14 +7,14 @@ import java.sql.DriverManager;
 public class Connectors {
     private String driver = "com.mysql.cj.jdbc.Driver";
     private String vendor = "mysql";
-    private String server = "codigomivecino-server.database.windows.net";
-    //private String server = "localhost";
+    //private String server = "node46477-codigomivecino.in1.cloudjiffy.net";
+    private String server = "localhost";
     private String port = "3306";
     private String db = "listadop";
     private String params = "?serverTimezone=UTC";
-    private String username = "javico";
-    private String password = "tocho123@";
-    //private String password = "";
+    private String username = "root";
+    //private String password = "KBSisg51609";
+    private String password = "";
     private String url = "jdbc:" + vendor + "://" + server + ":" + port + "/" + db + params;
     private Connection conn=null;
             
