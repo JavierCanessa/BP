@@ -4,25 +4,25 @@ package Entidades;
 public class Empresas {
     private String CodEmpresa;
     private String DescEmpresa;
-    private String Contrapartida;
+//    private String Contrapartida;
 
     public Empresas() {
     }
 
-    public Empresas(String CodEmpresa, String DescEmpresa, String Contrapartida) {
+    public Empresas(String CodEmpresa, String DescEmpresa) {
         this.CodEmpresa = CodEmpresa;
         this.DescEmpresa = DescEmpresa;
-        this.Contrapartida = Contrapartida;
+//        this.Contrapartida = Contrapartida;
     }
 
-    public Empresas(String Contrapartida) {
-        this.Contrapartida = Contrapartida;
-    }
+//    public Empresas(String Contrapartida) {
+//       this.Contrapartida = Contrapartida;
+//    }
 
     
     @Override
     public String toString() {
-        return "Empresas{" + "CodEmpresa=" + CodEmpresa + ", DescEmpresa=" + DescEmpresa + ", Contrapartida=" + Contrapartida + '}';
+        return "Empresas{" + "CodEmpresa=" + CodEmpresa + ", DescEmpresa=" + DescEmpresa + ".";
     }
 
     public String getCodEmpresa() {
@@ -41,13 +41,13 @@ public class Empresas {
         this.DescEmpresa = DescEmpresa;
     }
 
-    public String getContrapartida() {
-        return Contrapartida;
-    }
+//    public String getContrapartida() {
+//        return Contrapartida;
+//    }
 
-    public void setContrapartida(String Contrapartida) {
-        this.Contrapartida = Contrapartida;
-    }
+//    public void setContrapartida(String Contrapartida) {
+//        this.Contrapartida = Contrapartida;
+//    }
     
     
 }

@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 public interface I_EmpresasRepository {
     void guardar ( Empresas empresas );
     void eliminar ( Empresas empresas );
-    void modificarContrapartida ( Empresas empresa, String contrapartida );
+//    void modificarContrapartida ( Empresas empresa, String contrapartida );
     Empresas getEmpresa( String codEmpresa );
     
     List <Empresas>getAll();

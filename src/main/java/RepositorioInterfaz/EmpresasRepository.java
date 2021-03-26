@@ -27,11 +27,11 @@ public class EmpresasRepository implements I_EmpresasRepository{
        if ( empresas == null ) return ;
         try {
             PreparedStatement ps = new Connectors().getConnection().prepareStatement(
-                    "insert into listarecaudacion ( CodEmpresa, DescEmpresa, Contrapartida ) values (?,?,?) ",
+                    "insert into listarecaudacion ( CodEmpresa, DescEmpresa) values (?,?) ",
                     PreparedStatement.RETURN_GENERATED_KEYS  );{
                         ps.setString(1, empresas.getCodEmpresa());
                         ps.setString(2, empresas.getDescEmpresa());
-                        ps.setString(3, empresas.getContrapartida());
+//                        ps.setString(3, empresas.getContrapartida());
                         ps.execute();
                         ResultSet rs = ps.getGeneratedKeys();
                     }
@@ -64,8 +64,8 @@ public class EmpresasRepository implements I_EmpresasRepository{
             while( rs.next() ){
                 Empresas empre = new Empresas(
                 rs.getString("CodEmpresa"),
-                rs.getString("DescEmpresa"),
-                rs.getString("Contrapartida")
+                rs.getString("DescEmpresa")
+//                rs.getString("Contrapartida")
                 );
                 empresa1.add(empre);
             }
@@ -81,14 +81,14 @@ public class EmpresasRepository implements I_EmpresasRepository{
     public Empresas getEmpresa(String CodEmpresa) {
         Empresas empre1 = null;
         try ( ResultSet rs = new Connectors().getConnection().createStatement().executeQuery(
-                "select CodEmpresa, DescEmpresa, Contrapartida "
+                "select CodEmpresa, DescEmpresa"
                         + "from listarecaudacion where CodEmpresa = " + "'" + CodEmpresa + "'" ) )
         {
             if ( rs.next() ) {
                 empre1 = new Empresas(
                     rs.getString("CodEmpresa"),
-                    rs.getString("DescEmpresa"),
-                    rs.getString("Contrapartida")
+                    rs.getString("DescEmpresa")
+//                    rs.getString("Contrapartida")
                 );
             }
         } catch (Exception e) {
@@ -103,17 +103,17 @@ public class EmpresasRepository implements I_EmpresasRepository{
     
     
 
-    @Override
-    public void modificarContrapartida(Empresas empresa , String contrapartida) {
-        if ( empresa == null ) return;
-        try (PreparedStatement ps=connectors.getConnection().prepareStatement(
-                "update listarecaudacion set Contrapartida = " + "'" + contrapartida +  "'" + " where CodEmpresa = ?")){
-            ps.setString(1, empresa.getCodEmpresa() );
-            ps.execute();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } 
-    }
+//    @Override
+//    public void modificarContrapartida(Empresas empresa , String contrapartida) {
+//        if ( empresa == null ) return;
+//        try (PreparedStatement ps=connectors.getConnection().prepareStatement(
+//                "update listarecaudacion set Contrapartida = " + "'" + contrapartida +  "'" + " where CodEmpresa = ?")){
+//            ps.setString(1, empresa.getCodEmpresa() );
+//            ps.execute();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        } 
+//    }
 }
         
         

@@ -36,9 +36,9 @@
                         try {
                             String CodEmpresa = request.getParameter("CodEmpresa");
                             String DescEmpresa = request.getParameter("DescEmpresa");
-                            String Contrapartida = request.getParameter("Contrapartida");
-                            if ( CodEmpresa.isEmpty() || DescEmpresa.isEmpty() || Contrapartida.isEmpty() ) throw  new NullPointerException();
-                            Empresas empre1 = new Empresas(CodEmpresa, DescEmpresa, Contrapartida);
+//                            String Contrapartida = request.getParameter("Contrapartida");
+                            if ( CodEmpresa.isEmpty() || DescEmpresa.isEmpty() ) throw  new NullPointerException();
+                            Empresas empre1 = new Empresas(CodEmpresa, DescEmpresa);
                             a.guardar(empre1);   
                             out.println("<h4 style='color:green'>Se guardo la empresa : " + empre1.getDescEmpresa() + ".</h4>");
                             out.println("<a href='ingresoNuevo.jsp' style='color:yellow'>CLICK AQUI PARA RECARGAR PAGINA Y LISTA ASI EVITAR POSIBLES DUPLICADOS</a>");
@@ -67,11 +67,11 @@
                                 <td>  Descripcion empresa :  </td>
                                 <td> <input required="" type="text" name="DescEmpresa" placeholder="ingresar descripcion de empresa"> </td>
                             </tr>
-                            <tr>
+<!--                            <tr>
                                 <td>  Contrapartida : <br><br><br> </td> 
                                 <td> <input required="Si no hay contrapartida escibir Null" type="text" name="Contrapartida" placeholder="ingresar contrapartida"><br><br><br> </td> 
                                 
-                            </tr>
+                            </tr>-->
                             <tr>
                                 <td><input type="reset" value="Borrar"/><br><br></td>   
                                 <td><input type="submit" value="Enviar"/><br><br></td>  
