@@ -1,0 +1,114 @@
+* [33mcommit d2aa17644adcee3d6025cd0546eb8e24e05e897e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+[31m|[m Author: JavierCanessa <javierfreddycanessa93@hotmail.es>
+[31m|[m Date:   Thu Nov 26 19:45:17 2020 -0300
+[31m|[m 
+[31m|[m     Proyecto Clonado nov/26/2020
+[31m|[m 
+* [33mcommit 863496b09103debd4b155a725e6ab26d1afc21b5[m
+[31m|[m Author: Javier Canessa <javierfreddycanessa93@gmail.com>
+[31m|[m Date:   Wed Sep 9 22:59:45 2020 -0300
+[31m|[m 
+[31m|[m     elimine prueba.txt
+[31m|[m 
+* [33mcommit 97f2b7c35c07d88e500240e7835987ec21899cf2[m
+[31m|[m Author: Javier Canessa <javierfreddycanessa93@gmail.com>
+[31m|[m Date:   Wed Sep 9 22:59:07 2020 -0300
+[31m|[m 
+[31m|[m     prueba.txt
+[31m|[m   
+*   [33mcommit 1840306671fd6e49e909117d56bcd17fc0b300bd[m
+[32m|[m[33m\[m  Merge: 3ff639e 733d67e
+[32m|[m [33m|[m Author: Javier Canessa <javierfreddycanessa93@gmail.com>
+[32m|[m [33m|[m Date:   Wed Sep 9 22:56:07 2020 -0300
+[32m|[m [33m|[m 
+[32m|[m [33m|[m     Merge branch 'master' of https://github.com/JavierCanessa/BP into master
+[32m|[m [33m|[m 
+[32m|[m * [33mcommit 733d67e864a3ffcebbf16f1cf4d5dee71d7f5142[m
+[32m|[m [33m|[m Author: JavierCanessa <65481325+JavierCanessa@users.noreply.github.com>
+[32m|[m [33m|[m Date:   Tue Sep 8 11:37:01 2020 -0300
+[32m|[m [33m|[m 
+[32m|[m [33m|[m     Agregue o actualice la configuración del flujo de trabajo de implementación de App Service desde Azure Portal.
+[32m|[m [33m|[m 
+* [33m|[m [33mcommit 3ff639ec1960f85f55eb2dc00d02ed07d4e4b0fe[m
+[33m|[m[33m/[m  Author: Javier Canessa <javierfreddycanessa93@gmail.com>
+[33m|[m   Date:   Wed Sep 9 22:47:21 2020 -0300
+[33m|[m   
+[33m|[m       .war en la india
+[33m|[m 
+* [33mcommit 8cb83c27e4dc2713549827d71d5ca4667b3f5284[m
+[33m|[m Author: Javier Canessa <javierfreddycanessa93@gmail.com>
+[33m|[m Date:   Tue Sep 8 11:35:43 2020 -0300
+[33m|[m 
+[33m|[m     borre azure workflows
+[33m|[m 
+* [33mcommit d8f9297adbfaf8ff5627aefa7731d6c058957188[m
+[33m|[m Author: JavierCanessa <65481325+JavierCanessa@users.noreply.github.com>
+[33m|[m Date:   Tue Sep 8 11:31:40 2020 -0300
+[33m|[m 
+[33m|[m     Agregue o actualice la configuración del flujo de trabajo de implementación de App Service desde Azure Portal.
+[33m|[m 
+* [33mcommit 60a6467d414f10a18069a288b45249c9a7bdeda4[m
+[33m|[m Author: JavierCanessa <65481325+JavierCanessa@users.noreply.github.com>
+[33m|[m Date:   Tue Sep 8 11:31:09 2020 -0300
+[33m|[m 
+[33m|[m     Agregue o actualice la configuración del flujo de trabajo de implementación de App Service desde Azure Portal.
+[33m|[m 
+* [33mcommit ee1f5dd042fc7a8d07538d55cf6d98843ab82935[m
+[33m|[m Author: JavierCanessa <65481325+JavierCanessa@users.noreply.github.com>
+[33m|[m Date:   Tue Sep 8 11:30:19 2020 -0300
+[33m|[m 
+[33m|[m     Agregue o actualice la configuración del flujo de trabajo de implementación de App Service desde Azure Portal.
+[33m|[m 
+* [33mcommit deb47063182731669da927748ca6a24964b424f2[m
+[33m|[m Author: JavierCanessa <65481325+JavierCanessa@users.noreply.github.com>
+[33m|[m Date:   Tue Sep 8 11:29:45 2020 -0300
+[33m|[m 
+[33m|[m     Agregue o actualice la configuración del flujo de trabajo de implementación de App Service desde Azure Portal.
+[33m|[m 
+* [33mcommit eb3b484487c35e6bdc9471b160140ccffebbed53[m
+[33m|[m Author: Javier Canessa <javierfreddycanessa93@gmail.com>
+[33m|[m Date:   Tue Sep 8 11:28:39 2020 -0300
+[33m|[m 
+[33m|[m     DB azure e index a -codigo mi vecino-
+[33m|[m 
+* [33mcommit 1afc3f0e1b75fb248e9d2f1810cd48bf20c003e1[m
+[33m|[m Author: Javier Canessa <javierfreddycanessa93@gmail.com>
+[33m|[m Date:   Fri Sep 4 13:03:00 2020 -0300
+[33m|[m 
+[33m|[m     Elimine botones redundantes, index cambio desc -> nombre
+[33m|[m 
+* [33mcommit 5c7bc665692680e036c2e4dc4de9cfee3069cb89[m
+[33m|[m Author: Javier Canessa <javierfreddycanessa93@gmail.com>
+[33m|[m Date:   Mon Aug 31 08:12:27 2020 -0300
+[33m|[m 
+[33m|[m     Configuracion de titulo contrapartida en tabla contrapartida
+[33m|[m 
+* [33mcommit eeabfd057aa7f500d1ae081db4241d07f51bddf2[m
+[33m|[m Author: Javier Canessa <javierfreddycanessa93@gmail.com>
+[33m|[m Date:   Fri Aug 28 02:16:19 2020 -0300
+[33m|[m 
+[33m|[m     delete note Pruebas
+[33m|[m 
+* [33mcommit f5c3482323013109f454cdf67845db9174f6cb8a[m
+[33m|[m Author: Javier Canessa <javierfreddycanessa93@gmail.com>
+[33m|[m Date:   Fri Aug 28 02:12:09 2020 -0300
+[33m|[m 
+[33m|[m     test3
+[33m|[m 
+* [33mcommit de4381ca004d0b3e908fe346e12e2b62e6c7ae8e[m
+[33m|[m Author: Javier Canessa <javierfreddycanessa93@gmail.com>
+[33m|[m Date:   Fri Aug 28 02:08:48 2020 -0300
+[33m|[m 
+[33m|[m     note:test2
+[33m|[m 
+* [33mcommit 537593958f52b92fa71d23ccc13dd3d98c719945[m
+[33m|[m Author: Javier Canessa <javierfreddycanessa93@gmail.com>
+[33m|[m Date:   Fri Aug 28 02:08:08 2020 -0300
+[33m|[m 
+[33m|[m     note:test
+[33m|[m 
+* [33mcommit 5bb3ee42664d770df0efa48dd5b8b318fba2a0b9[m
+  Author: Javier Canessa <javierfreddycanessa93@gmail.com>
+  Date:   Fri Aug 28 02:06:09 2020 -0300
+  
+      Primer commit: web terminada(Sin tabla dinamica)

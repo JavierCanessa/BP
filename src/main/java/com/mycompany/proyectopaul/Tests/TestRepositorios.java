@@ -11,9 +11,12 @@ public class TestRepositorios {
    
     public static void main(String[] args) {
         // TODO code application logic here
+        
         I_EmpresasRepository a = new EmpresasRepository( new Connectors() );
-        //Empresas emp1 = new Empresas("100500", "Hay que intentar ", "Modificar");
-        //a.guardar(emp1);//
+        Empresas emp1 = new Empresas("100500", "Hay que intentar ", "Modificar");
+        a.guardar(emp1);
+
+        
         //System.out.println(  intentara.getEmpresa(76) );
         //System.out.println( a.getAll() );
         //a.eliminar(a.getEmpresa("100500"));
