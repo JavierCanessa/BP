@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 public class Connectors {
     private String driver = "com.mysql.cj.jdbc.Driver";
     private String vendor = "mysql";
-    private String server = " https://node62718-codigomivecino.in1.cloudjiffy.net";
+    private String server = "node62718-codigomivecino.in1.cloudjiffy.net";
     //private String server = "localhost";
     private String port = "3306";
     private String db = "listadop";
