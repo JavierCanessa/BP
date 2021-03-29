@@ -97,7 +97,8 @@
                                                                         else{
                                                                             //out.println( "Se encontro por nombre de empresa : "  + a.getEmpresa(request.getParameter("buscarEmpresa")) );
                                                                             //out.println(new Table<Curso>().getTable(cr.getAll(),"CursoDelete.jsp"));
-                                                                            out.println( new Tabla<Empresas>().getTable(a.getlikeDesc(request.getParameter("buscarEmpresadesc"))) );
+                                                                            //out.println( new Tabla<Empresas>().getTable(a.getlikeDesc(request.getParameter("buscarEmpresadesc"))) );
+                                                                            out.println("<h3>Funcion deshabilitada</h3>");
                                                                         }
                                                                     %>
                                                                 </p>

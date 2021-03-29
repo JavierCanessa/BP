@@ -15,7 +15,7 @@ public class TestRepositorios {
         I_EmpresasRepository a = new EmpresasRepository( new Connectors() );
         //Empresas emp1 = new Empresas("100500", "Hay que intentar ", "Modificar");
         //a.guardar(emp1);
-
+        System.out.println( a.getById("144").getClass() );
         
         //System.out.println(  intentara.getEmpresa(76) );
         //System.out.println( a.getAll() );
