@@ -62,13 +62,13 @@ public class EmpresasRepository implements I_EmpresasRepository{
         try (ResultSet rs=new Connectors().getConnection().createStatement().executeQuery(
                 "select * from listarecaudacion ") ){
             while( rs.next() ){
-                Empresas empre = new Empresas(
-                rs.getString("CodEmpresa"),
-                rs.getString("DescEmpresa")
-//                rs.getString("Contrapartida")
+            Empresas empre = new Empresas(
+                    rs.getString("CodEmpresa"), 
+                    rs.getString("DescEmpresa")
                 );
                 empresa1.add(empre);
             }
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -81,7 +81,7 @@ public class EmpresasRepository implements I_EmpresasRepository{
     public Empresas getEmpresa(String CodEmpresa) {
         Empresas empre1 = null;
         try ( ResultSet rs = new Connectors().getConnection().createStatement().executeQuery(
-                "select CodEmpresa, DescEmpresa"
+                "select CodEmpresa, DescEmpresa "
                         + "from listarecaudacion where CodEmpresa = " + "'" + CodEmpresa + "'" ) )
         {
             if ( rs.next() ) {
@@ -93,9 +93,7 @@ public class EmpresasRepository implements I_EmpresasRepository{
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }
-        
-        
+        }       
         
         return  empre1;   
     }
@@ -114,6 +112,31 @@ public class EmpresasRepository implements I_EmpresasRepository{
 //            e.printStackTrace();
 //        } 
 //    }
+
+    @Override
+    public List<Empresas> getlikeDesc(String desc) {
+       if (desc==null) return new ArrayList<>();
+       ArrayList<Empresas> empresa1 = new ArrayList<>();
+        Empresas empresas=null;
+        try (ResultSet rs=new Connectors().getConnection().createStatement().executeQuery(
+                "select * from listarecaudacion where DescEmpresa LIKE '%"+desc+"%'") ){
+            while( rs.next() ){
+            Empresas empre = new Empresas(
+                    rs.getString("CodEmpresa"), 
+                    rs.getString("DescEmpresa")
+                );
+                empresa1.add(empre);
+            }
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        
+        return empresa1; 
+       
+    }
+
+    
 }
         
         

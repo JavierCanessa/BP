@@ -5,9 +5,13 @@ import Connectors.Connectors;
 import Entidades.Empresas;
 import RepositorioInterfaz.EmpresasRepository;
 import RepositorioInterfaz.I_EmpresasRepository;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class TestRepositorios {
-
+I_EmpresasRepository a = new EmpresasRepository( new Connectors() );
    
     public static void main(String[] args) {
         // TODO code application logic here
@@ -15,7 +19,9 @@ public class TestRepositorios {
         I_EmpresasRepository a = new EmpresasRepository( new Connectors() );
         //Empresas emp1 = new Empresas("100500", "Hay que intentar ", "Modificar");
         //a.guardar(emp1);
-        System.out.println( a.getById("144").getClass() );
+        
+        //System.out.println(a.getlikeDesc("univer"));
+        //System.out.println(a.getById("144"));
         
         //System.out.println(  intentara.getEmpresa(76) );
         //System.out.println( a.getAll() );
@@ -28,5 +34,6 @@ public class TestRepositorios {
         //a.modificarContrapartida(a.getEmpresa("10"), "actualizadoDesdeNetbeansPapi");
         
     }
+    
     
 }
