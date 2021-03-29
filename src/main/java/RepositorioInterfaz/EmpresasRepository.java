@@ -60,7 +60,7 @@ public class EmpresasRepository implements I_EmpresasRepository{
         ArrayList<Empresas> empresa1 = new ArrayList<>();
         Empresas empresas=null;
         try (ResultSet rs=new Connectors().getConnection().createStatement().executeQuery(
-                "select * from listarecaudacion") ){
+                "select * from listarecaudacion ") ){
             while( rs.next() ){
                 Empresas empre = new Empresas(
                 rs.getString("CodEmpresa"),
