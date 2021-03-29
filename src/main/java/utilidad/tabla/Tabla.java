@@ -7,8 +7,8 @@ import java.util.List;
 
 public class Tabla<E> {
     public String getTable(List<E> list){
-        if(list==null || list.isEmpty()) return "";
-        String table="<table style='text-align:center' style='border:beige 1px solid' text-align:'center'>\n";
+       if(list==null || list.isEmpty()) return "";
+        String table="<table style='border:beige 1px solid;text-align:center'>\n";
         
         E e=list.get(0);
         Field[] campos=e.getClass().getDeclaredFields();
@@ -18,9 +18,9 @@ public class Tabla<E> {
         table+="</tr>\n";
         
         for(E r:list){
-            table+="<tr>";
+            table+="<tr style='border:beige 1px solid;text-align:center'>";
             for(Field f:campos){
-                table+="<td  style='border:beige 1px solid;text-align:center'>";
+                table+="<td style='border:beige 1px solid;text-align:center'>";
                 String metodo="get"
                         +f.getName().substring(0,1).toUpperCase()
                         +f.getName().substring(1);
@@ -29,8 +29,7 @@ public class Tabla<E> {
                     table+=r.getClass().getDeclaredMethod(metodo, null).invoke(r, null);
                 }catch(Exception ex){}
                 table+="</td>";
-            } 
-            table+="</tr>\n";
+            }
         }
         
         table+="</table>";

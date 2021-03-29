@@ -99,7 +99,7 @@
                                                                             //out.println(new Table<Curso>().getTable(cr.getAll(),"CursoDelete.jsp"));
                                                                             //out.println( new Tabla<Empresas>().getTable(a.getlikeDesc(request.getParameter("buscarEmpresadesc"))) );
                                                                             //out.println("<h3>Funcion deshabilitada</h3>");
-                                                                            out.println( new Tabla<Empresas>().getTable(a.getlikeDesc(request.getParameter("buscarEmpesadesc"))) );
+                                                                            out.println( new Tabla<Empresas>().getTable(a.getlikeDesc(request.getParameter("buscarEmpresadesc"))));
                                                                         }
                                                                     %>
                                                                 </p>
