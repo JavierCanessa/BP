@@ -25,17 +25,16 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper" style="background-color: black;">
+                            <!--<a href="ingresoadmin.jsp" style="border: 1px solid white; padding: 1%">ADMINISTRADOR</a>-->
 
 				<!-- Header -->
-					<header id="header">
+                                <header id="header">
 						<div class="logo">
                                                     <a style="text-decoration: none" href="index.jsp" class="icon fa-gem" ></a>
 						</div>
 						<div class="content">
 							<div class="inner">
 								<h1>Codigo Mi Vecino</h1>
-                                                                <a href="ingresoadmin.jsp" style="border: 2px solid white; padding: 1.5%">INGRESAR COMO ADMINISTRADOR</a>
-                                                                <br><br>
 								<p>SELECCIONE CRITERIO DE BUSQUEDA : </p>
 							</div>
 						</div>
