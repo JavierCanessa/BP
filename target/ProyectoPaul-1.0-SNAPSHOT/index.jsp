@@ -25,7 +25,7 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper" style="background-color: black;">
-                            <!--<a href="ingresoadmin.jsp" style="border: 1px solid white; padding: 1%">ADMINISTRADOR</a>-->
+                           
 
 				<!-- Header -->
                                 <header id="header">
@@ -47,6 +47,8 @@
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
+                                                <a href="ingresoadmin.jsp" style="border: 1px solid white; padding: 1%">INGRESO ADMINISTRADOR</a>
+                                                <br><br><br><br><br><br> 
 					</header>
                                 
 				<!-- Main -->
