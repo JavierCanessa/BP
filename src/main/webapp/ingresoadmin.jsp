@@ -33,7 +33,7 @@
 
         <h1 id="topPagina" >Administrador</h1>
         <div class="logo">
-            <button onclick=" location.href = 'http://www.codigomivecino.cf/logout.jsp'">
+            <button onclick=" location.href = 'logout.jsp'">
                 Salir de Administrador
                 <a style="text-decoration: none" href="index.jsp" class="icon fa-gem" ></a>
             </button>

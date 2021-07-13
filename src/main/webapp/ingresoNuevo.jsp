@@ -63,7 +63,7 @@
         <!--Formulario Ingreso -->
         <div id="formAltas" style="text-align: center" >
             <div id="ingreso" > 
-                <form method="GET">
+                <form method="POST">
                     <table style="border: gray 8px groove; border-radius: 15px">
                         <tr>
                             <td> <br><br>  Codigo empresa :  </td>
