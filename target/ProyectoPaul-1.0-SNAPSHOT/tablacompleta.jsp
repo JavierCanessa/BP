@@ -13,7 +13,7 @@
 <%@page import="utilidad.tabla.Tabla"%>
 <%@page import="Entidades.Empresas"%>
 <%@page import="Entidades.Empresas"%>
-<% I_EmpresasRepository a = new EmpresasRepository( new Connectors() ); %>
+<% I_EmpresasRepository a = new EmpresasRepository(new Connectors()); %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,23 +22,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="icon" href="./images/elmercader01.svg"/>
         <!--<script src="fun.js"></script>-->
     </head>
     <body>
-        <h1>Visualizador de tabla completa</h1><br>
-        <button onclick=" location.href='index.jsp' ">Volver al Inicio</button><br><br><br>
-        <button onclick=" location.href='ingresoadmin.jsp' ">Volver al panel de administrador</button><br><br><br>
         <%
-            out.println( new Tabla<Empresas>().getTable( a.getAll(), "deleteEmpresas.jsp" ) );
+            //HttpSession session=request.getSession();
+            boolean xSession = false;
+            try {
+                xSession = (boolean) session.getAttribute("session");
+            } catch (Exception e) {
+            }
+            if (!xSession)
+                response.sendRedirect("logout.html");
         %>
-        
-        
+        <h1>Visualizador de tabla completa</h1><br>
+        <button onclick=" location.href = 'index.jsp'">Volver al Inicio</button><br><br><br>
+        <button onclick=" location.href = 'ingresoadmin.jsp'">Volver al panel de administrador</button><br><br><br>
+        <%
+            out.println(new Tabla<Empresas>().getTable(a.getAll(), "deleteEmpresas.jsp"));
+        %>
+
+
         <!-- Footer -->
-            <footer id="footer">
-                    <p class="copyright">&copy; DESARROLLADOR	: JAVIER CANESSA MAUTONG.</p>
-            </footer>
-        
-         <!-- Scripts -->
+        <footer id="footer">
+            <p class="copyright">&copy; DESARROLLADOR	: JAVIER CANESSA MAUTONG.</p>
+        </footer>
+
+        <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/browser.min.js"></script>
         <script src="assets/js/breakpoints.min.js"></script>
