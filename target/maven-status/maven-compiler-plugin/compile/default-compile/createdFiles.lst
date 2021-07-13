@@ -1,9 +1,0 @@
-com/mycompany/proyectopaul/Tests/TestConnection.class
-com/mycompany/proyectopaul/Tests/TestRepositorios.class
-Servlets/InicioSession.class
-ManagedBeans/FullTableManagedBean.class
-RepositorioInterfaz/EmpresasRepository.class
-utilidad/tabla/Tabla.class
-RepositorioInterfaz/I_EmpresasRepository.class
-Entidades/Empresas.class
-Connectors/Connectors.class
