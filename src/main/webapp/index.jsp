@@ -89,7 +89,7 @@
 
                 <!-- Acceso -->
                 <article id="formIngreso">
-                    <form action="http://localhost:8090/ProyectoPaul/InicioSession" method="POST">
+                    <form action="http://www.codigomivecino.cf/InicioSession" method="POST">
                         Username:   <input type="text" name="user" value="admin"/><br>
                         Password:   <input type="password" name="pass" /><br>
                         <input type="reset" value="Clean"/>
