@@ -41,8 +41,8 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#CodEmpresa">Codigo de empresa</a></li>
-                        <li><a href="#DescEmpresa">Nombre de empresa</a></li>
+                        <!--<li><a href="#CodEmpresa">Codigo de empresa</a></li>-->
+                        <li><a href="#DescEmpresa">BUSCAR EMPRESA</a></li>
                     </ul>
                 </nav>
                 <a href="#formIngreso" style="border: 1px solid white; padding: 1%">INGRESO ADMINISTRADOR</a>
@@ -72,10 +72,10 @@
 
                 <!-- Busqueda Descripcion de emrpesa -->
                 <article id="DescEmpresa">
-                    <h2 class="major">Buscar Nombre:</h2>
+                    <h2 class="major">Buscar Empresa:</h2>
 
                     <form method="POST">
-                        <input autofocus required="" type="text" name="buscarEmpresadesc" placeholder="No se ha ingresado ninguna Descripcion de empresa"/>
+                        <input autofocus required="" type="text" name="buscarEmpresadesc" placeholder="Ingrese empresa"/>
                     </form>
                     <p class="major">
                         <%
